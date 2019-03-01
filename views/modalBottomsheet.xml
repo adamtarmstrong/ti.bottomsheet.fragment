@@ -1,0 +1,27 @@
+<Alloy>
+	<Window id="modalBottomsheet" onAndroid:back="hideBottomSheetView">
+		<View id="container" onClick="hideBottomSheetView" onSwipe="handleContainerBGSwipe">
+			<View id="bottomSheetView" bubbleParent="false" autoStyle="true">
+					<View class="bottomSheetHandleContainer" onTouchmove="handleTouchMove" onTouchend="handleTouchEnd" platform="ios">
+							<View class="bottomSheetHeaderBar" />
+							<Label class="closeButton" onClick="hideBottomSheetView" />
+					</View>
+					<ScrollView width="100%" height="Ti.UI.FILL" layout="vertical" onScroll="handleScroll">
+							
+							
+							<!--View / Content Goes Here-->
+							<Label text="Click Here To Close" top="20" onClick="hideBottomSheetView" height="50%" backgroundColor="#cccccc" />
+							<Label text="Open another level" top="20" onClick="openAdditionalLevelModal" height="49%" />
+							<Label text="three" height="200" />
+							<Label text="four" height="200" />
+							<Label text="five" height="200" />
+							<Label text="six" height="200" />
+							<!--View / Content Goes Here-->
+							
+							
+
+					</ScrollView>
+			</View>
+		</View>
+	</Window>
+</Alloy>
