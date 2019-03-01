@@ -5,6 +5,12 @@ This iteration is a standalone Alloy Controller/View/Style.
   
 <img src="bottomsheet.gif" width="200"/>
   
+  
+#### Dependecies
+- Alloy
+- FontAwesome (used for "x" close button)  
+  
+#### Use
 1. Copy the .xml/.js/.tss files to your project  
   
 2. Edit the .xml & .js as necessary to customize for your app  
